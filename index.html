@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #content {
+            padding: 20px;
+            border: 2px solid black;
+            display: inline-block;
+            background-color: lightgray;
+        }
+        .highlight {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Welcome to My Page</h1>
+    <p id="text">Click the button to change this text.</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <br><br>
+
+    <button onclick="toggleStyle()">Toggle Style</button>
+
+    <br><br>
+
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <div id="content">
+        <p>This is a container div.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
